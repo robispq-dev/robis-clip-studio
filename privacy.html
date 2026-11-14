@@ -31,11 +31,12 @@
 <ul>
   <li>Projects, media, post history and tokens are stored locally on your computer. Tokens are encrypted with the Windows Data Protection API (DPAPI) before storage.</li>
   <li>Videos and post data are sent directly from your computer to TikTok (open.tiktokapis.com) only when you click Post or when a schedule you created becomes due.</li>
+  <li>To keep the app's client secret off users' computers, ROBIS runs a small authentication service on Cloudflare Workers. When you connect an account or the app renews its access, the one-time authorization code or refresh token is sent to this service, which adds the app secret, forwards the request to TikTok (or Facebook) and returns the new tokens directly to your computer. The service does not store or log tokens, codes, videos or captions.</li>
   <li>ROBIS does not collect your videos, captions or TikTok data on its own servers.</li>
 </ul>
 
 <h2>4. Sharing</h2>
-<p>We do not sell or share your data. Data is sent only to the platforms you choose to post to (TikTok, Facebook) at your request, and is then governed by their privacy policies.</p>
+<p>We do not sell or share your data. Data is sent only to the platforms you choose to post to (TikTok, Facebook) at your request, and is then governed by their privacy policies. Our authentication service is hosted by Cloudflare, which processes these requests as our infrastructure provider.</p>
 
 <h2>5. Retention and deletion</h2>
 <p>Data stays on your computer until you delete it. Removing an account in the app's Settings deletes its tokens. Uninstalling the app and deleting its data folder removes all local data. You can also revoke the app's access at any time in TikTok: Settings and privacy → Security → Manage app permissions.</p>
@@ -67,6 +68,7 @@
 <ul>
   <li>Dữ liệu lưu trên máy tính của bạn; token được mã hoá bằng DPAPI của Windows.</li>
   <li>Video và thông tin bài đăng chỉ được gửi thẳng từ máy bạn tới TikTok khi bạn bấm Đăng hoặc khi đến giờ lịch bạn đặt.</li>
+  <li>Để khoá bí mật của ứng dụng không nằm trên máy người dùng, ROBIS vận hành một dịch vụ xác thực nhỏ trên Cloudflare Workers. Khi bạn kết nối tài khoản hoặc ứng dụng làm mới quyền truy cập, mã cấp quyền dùng một lần hoặc mã làm mới được gửi qua dịch vụ này; dịch vụ thêm khoá bí mật, chuyển yêu cầu tới TikTok (hoặc Facebook) và trả token mới thẳng về máy bạn. Dịch vụ không lưu, không ghi log token, mã, video hay caption.</li>
   <li>ROBIS không thu thập video, caption hay dữ liệu TikTok của bạn về máy chủ của ROBIS.</li>
 </ul>
 <h2>4. Chia sẻ</h2>
