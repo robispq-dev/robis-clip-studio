@@ -1,39 +1,103 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ROBIS Clip Studio</title>
-
+<title>ROBIS Clip Studio – Vertical video editor for TikTok &amp; Reels</title>
+<meta name="description" content="ROBIS Clip Studio is a Windows desktop editor for vertical 9:16 videos with Vietnamese titles and subtitles, and scheduled posting to TikTok and Facebook Reels." />
 <style>
-  body { font: 17px/1.6 'Segoe UI', Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 16px; color: #2a1a0f; background: #fbf6ee; }
-  header { display: flex; align-items: center; gap: 18px; }
-  header svg { width: 88px; height: 88px; border-radius: 18px; }
-  h1 { color: #6b3e26; margin: 0; }
-  a { color: #6b3e26; }
-  ul { padding-left: 20px; }
-  footer { margin-top: 48px; font-size: 14px; color: #7a6a58; }
+  :root { --brown:#6b3e26; --cream:#f5e6cc; --ink:#2a1a0f; --muted:#6f5d4a; --bg:#fbf6ee; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:17px/1.6 'Segoe UI', Arial, sans-serif; color:var(--ink); background:var(--bg); }
+  a { color:var(--brown); }
+  header.top { background:var(--brown); color:var(--cream); }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+  nav { display:flex; align-items:center; gap:18px; flex-wrap:wrap; padding:14px 0; }
+  nav .brand { font-weight:800; font-size:20px; margin-right:auto; display:flex; align-items:center; gap:10px; }
+  nav a { color:var(--cream); text-decoration:none; font-size:15px; }
+  .hero { padding:56px 0 48px; }
+  .hero h1 { font-size:38px; line-height:1.2; margin:0 0 14px; }
+  .hero p { font-size:19px; max-width:720px; margin:0 0 22px; }
+  .btn { display:inline-block; background:var(--cream); color:var(--brown); padding:10px 18px; border-radius:8px; font-weight:700; text-decoration:none; }
+  section { padding:40px 0; border-bottom:1px solid #e6d7bd; }
+  h2 { color:var(--brown); font-size:26px; margin:0 0 18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px; }
+  .card { background:#fff; border:1px solid #eadbc0; border-radius:12px; padding:18px; }
+  .card h3 { margin:0 0 6px; font-size:18px; }
+  ol.steps li { margin-bottom:8px; }
+  table { border-collapse:collapse; width:100%; background:#fff; }
+  td, th { border:1px solid #eadbc0; padding:8px 10px; text-align:left; vertical-align:top; font-size:15px; }
+  footer { padding:28px 0 40px; color:var(--muted); font-size:15px; }
+  .vi { color:var(--muted); font-size:15px; }
 </style>
 </head>
 <body>
-<header>
-  <svg width="88" height="88" viewBox="0 0 100 100" role="img" aria-label="ROBIS Clip Studio"><rect width="100" height="100" rx="18" fill="#6B3E26"/><rect x="8" y="8" width="84" height="84" rx="10" fill="none" stroke="#F5E6CC" stroke-width="3"/><text x="50" y="66" text-anchor="middle" font-family="Arial" font-weight="700" font-size="56" fill="#F5E6CC">R</text></svg>
-  <div>
-    <h1>ROBIS Clip Studio</h1>
-    <div>Ứng dụng Windows dựng video dọc và đăng lên TikTok, Facebook Reels</div>
+<header class="top">
+  <div class="wrap">
+    <nav>
+      <span class="brand"><svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="18" fill="#F5E6CC"/><text x="50" y="68" text-anchor="middle" font-family="Arial" font-weight="700" font-size="60" fill="#6B3E26">R</text></svg>ROBIS Clip Studio</span>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#tiktok">TikTok integration</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+    <div class="hero">
+      <h1>Edit vertical videos and publish them to TikTok and Facebook Reels — from one Windows app.</h1>
+      <p>ROBIS Clip Studio helps small businesses, online sellers and content creators turn product footage into ready-to-post 9:16 clips with titles, Vietnamese subtitles, logo and music, then post or schedule them to their own TikTok and Facebook accounts.</p>
+      <p class="vi">Ứng dụng Windows dựng video dọc 9:16 với chữ và phụ đề tiếng Việt, rồi đăng hoặc lên lịch đăng lên TikTok và Facebook Reels của chính bạn.</p>
+      <a class="btn" href="mailto:robis.media.01@gmail.com?subject=ROBIS%20Clip%20Studio">Request the installer</a>
+    </div>
   </div>
 </header>
-<p>ROBIS Clip Studio is a Windows desktop editor for vertical (9:16) videos made by ROBIS. It lets the user trim and combine clips, add Vietnamese titles, subtitles and logo, export MP4, and post the user's own videos to their TikTok account and Facebook Page.</p>
-<ul>
-  <li>Dựng video: cắt, ghép, chữ tiếng Việt, phụ đề SRT, logo, nhạc nền.</li>
-  <li>Xuất MP4 1080×1920 H.264/AAC.</li>
-  <li>Đăng ngay hoặc lên lịch tới TikTok (Content Posting API) và Facebook Reels.</li>
-  <li>Dữ liệu và token lưu trên máy người dùng, không có máy chủ trung gian.</li>
-</ul>
-<p>
-  <a href="privacy.html">Chính sách quyền riêng tư / Privacy Policy</a> ·
-  <a href="terms.html">Điều khoản sử dụng / Terms of Service</a>
-</p>
-<footer>Liên hệ / Contact: <a href="mailto:robis.media.01@gmail.com">robis.media.01@gmail.com</a></footer>
+
+<main class="wrap">
+<section id="features">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card"><h3>Familiar timeline editor</h3>Drag and drop video, images and audio. Trim, split, reorder, undo/redo. Separate tracks for video, text, subtitles, logo and music.</div>
+    <div class="card"><h3>Built for 9:16</h3>Fit or fill landscape footage into a 1080×1920 frame, with safe-area guides so text is not covered by TikTok or Reels buttons.</div>
+    <div class="card"><h3>Vietnamese text done right</h3>Titles and SRT subtitles render with full Vietnamese diacritics; the exported video matches the preview exactly. Use your own fonts.</div>
+    <div class="card"><h3>Brand templates</h3>Save colors, logo, fonts and subtitle position as reusable templates for consistent branding.</div>
+    <div class="card"><h3>MP4 export</h3>H.264/AAC, 1080×1920, 30 fps, with progress, cancel and clear error messages. A cover image is exported alongside.</div>
+    <div class="card"><h3>Post &amp; schedule</h3>Write separate captions per platform, post now or schedule (Vietnam time), and track the status of each post.</div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li>Install ROBIS Clip Studio on Windows 10/11 and open it.</li>
+    <li>Drop your clips into the editor, add titles, subtitles, logo and music, then export an MP4.</li>
+    <li>In <b>Settings → Accounts</b>, click <b>Connect TikTok account</b>. TikTok's own login page opens in your browser; you sign in and approve access.</li>
+    <li>In <b>Post &amp; schedule</b>, pick the video and your account, write the caption, choose who can see the video and interaction settings, confirm TikTok's Music Usage Confirmation, then post now or schedule it.</li>
+    <li>The app uploads the video to TikTok and shows the status until TikTok confirms the post.</li>
+  </ol>
+</section>
+
+<section id="tiktok">
+  <h2>TikTok integration</h2>
+  <table>
+    <tr><th>TikTok product / scope</th><th>What the app uses it for</th></tr>
+    <tr><td>Login Kit — <code>user.info.basic</code></td><td>Lets the user connect their own TikTok account and shows the account's display name and avatar so the user knows where the video will go.</td></tr>
+    <tr><td>Content Posting API — <code>video.publish</code></td><td>Direct Post: uploads the user's edited video to their own profile with the privacy level, interaction settings, caption and commercial-content disclosure the user chose.</td></tr>
+    <tr><td>Content Posting API — <code>video.upload</code></td><td>Send-to-inbox: uploads the video as a draft so the user can finish editing and post it inside the TikTok app.</td></tr>
+  </table>
+  <p>The app never posts without the user's explicit action, never adds its own watermark or promotional text, and shows TikTok's creator settings (privacy options, disabled comments/duet/stitch, maximum duration) before every post.</p>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <p><b>Who is it for?</b> Small businesses, online sellers and creators who make short vertical videos and want to post them to their own TikTok and Facebook accounts.</p>
+  <p><b>Where is my data stored?</b> Projects, videos and account tokens stay on your computer. Tokens are encrypted with Windows Data Protection (DPAPI). See the <a href="privacy.html">Privacy Policy</a>.</p>
+  <p><b>Can I disconnect my TikTok account?</b> Yes — remove it in Settings, or revoke access in TikTok under Settings and privacy → Security → Manage app permissions.</p>
+  <p><b>Does scheduling work when my computer is off?</b> TikTok posts are sent by the app, so the computer must be on and online at the scheduled time. Facebook Reels can be scheduled on Facebook's servers.</p>
+</section>
+</main>
+
+<footer class="wrap">
+  © 2026 ROBIS · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · Contact: <a href="mailto:robis.media.01@gmail.com">robis.media.01@gmail.com</a>
+</footer>
 </body>
 </html>
